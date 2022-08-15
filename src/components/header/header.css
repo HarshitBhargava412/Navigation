@@ -1,0 +1,178 @@
+.upper_nav {
+	background-color: black;
+	height: auto;
+	width: 100%;
+	min-width: 1470px;
+	max-width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	margin: 0px;
+	position:fixed;
+	z-index:12;
+	justify-content: space-around;
+
+}
+
+/*Logo link to home page has been styled*/
+.logo img {
+	height: 40px;
+	width: 180px;
+	float: left;
+	padding: 5px;
+	margin-left:40px;
+	margin-top: 5px;
+}
+
+/*div for search bar styled*/
+div.fill {
+	float: left;
+	margin-left: 50px;
+	padding: 5px;
+}
+
+/*Search bar textfeild styled*/
+span.entry input[type=search] {
+	float: left;
+	height: 46px;
+	width: 630px;
+	margin-top: 0.5px;
+	border: 1px solid white;
+	font-size: 18px;
+	outline: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: grey;
+}
+
+/*Search Button Styled*/
+.button img {
+	float: left;
+	height: 39px;
+	width: 42px;
+	margin: none;
+	position: relative;
+	border: 1px solid white;
+}
+
+/*Hover property used for Search Button*/
+.button:hover {
+	cursor: pointer;
+}
+
+/*Sign In div link styled*/
+.sign {
+	float: left;
+	text-decoration: none;
+	padding: 8px 10px 13px 10px;
+	margin-top: 5px;
+	margin-left: 25px;
+	font-weight: bold;
+	border: 3px solid transparent;
+	height:20px;
+	font-family: 'Roboto Slab';
+}
+
+.sign a{
+	color: #64ACFF;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Roboto Slab';
+}
+
+span.items{
+	color:black;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Roboto Slab';
+	background-color:white;
+	padding:5px;
+	border-radius:100%;
+}
+
+/*hover property added to sign link*/
+.sign:hover {
+	transition:0.3s;
+	border: 3px solid white;
+	border-radius:15px;
+}
+
+/*Drop Down for More Options styled*/
+#dropdown {
+	float: left;
+	padding: 5px;
+	cursor: pointer;
+	margin-left:30px;
+	display:flex;
+	margin-right:60px;
+}
+
+.dropdown-icon{
+	color:#64ACFF;
+	float:right;
+	margin-left:7px;
+}
+
+#dropdown .dropbtn {
+	display: block;
+	font-size: 18px;
+	color: #64ACFF;
+	padding: 10px;
+	margin-left: auto;
+	margin-right:0;
+	font-weight: bold;
+	font-family: 'Roboto Slab';
+}
+
+.dropdown-head{
+	display:none;
+	height:0;
+	width:50px;
+	background-color:black;
+	position:absolute;
+	margin-top:55px;
+	margin-left:45px;
+	transform: rotate(45deg);
+	transition: height 0.5s;
+}
+
+/*Inner div of drop down styled*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	width: 180px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'EB Garamond';
+	margin-top:65px;
+	border-radius:20px;
+	height:0;
+	transition: height 0.3s ease-in-out;
+	margin-right:50px;
+}
+
+.dropdown-content a {
+	float: left;
+	color: white;
+	padding: 12px 0px 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	width: 164px;
+	margin-top:5px;
+}
+
+/*hover property added to the drop button and inner links*/
+.dropdown-content a:hover {
+	background-color: red;
+	color: black;
+	transition:1s;
+	border-radius:20px;
+}
+
+#dropdown:hover .dropdown-content,
+#dropdown:hover .dropdown-head {
+	z-index:1;
+}
